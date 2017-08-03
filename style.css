@@ -1,0 +1,219 @@
+/*
+
+SIDEBAR HTML
+
+	<div class="exchange-events sidebar">
+	
+		<div class="event">
+			<h3><a href="http://localhost/wordpress-ms/test-events/event/new-event/">New Event </a></h3>
+			<div class="contents">
+				<div class="datetime">June 05, 2014, 6:00 PM</div>
+				<div class="location">there</div>	
+			</div><!-- .contents -->	
+		</div><!-- .event -->
+
+		<div class="event">
+			<h3><a href="http://localhost/wordpress-ms/test-events/event/hello-world/">Hello World!!!</a></h3>
+			<div class="contents">
+				<div class="datetime">August 08, 2014, 12:30 PM</div>
+				<div class="location">here</div>		
+			</div><!-- .contents -->
+		</div><!-- .event -->
+	
+	</div>
+		
+*/
+
+/*
+
+ARCHIVE HTML
+
+	<div class="exchange-events archive">
+		
+		<div class="agenda-day">
+			<div class="date-label">
+				<div class="weekday">Thursday</div>
+				<div class="month">June</div>
+				<div class="day">5</div>
+			</div>
+
+			<div class="event">
+				<h3><a href="http://localhost/wordpress-ms/test-events/event/new-event/">New Event </a></h3>
+				<div class="contents">
+					<div class="datetime">June 05, 2014, 6:00 PM</div>
+					<div class="location">there</div>
+				</div><!-- .contents -->
+			</div><!-- .event -->
+		</div>
+		
+		<div class="agenda-day">
+			<div class="date-label">
+				<div class="weekday">Friday</div>
+				<div class="month">August</div>
+				<div class="day">8</div>
+			</div>
+			
+			<div class="event">
+				<h3><a href="http://localhost/wordpress-ms/test-events/event/hello-world/">Hello World!!!</a></h3>
+				<div class="contents">
+					<div class="datetime">August 08, 2014, 12:30 PM</div>
+					<div class="location">here</div>
+				</div><!-- .contents -->
+			</div><!-- .event -->
+	
+	</div>
+
+*/
+
+
+.exchange-events {
+	font-family: Arial, san-serif;
+	line-height:1.0em;
+}
+
+
+
+/*
+ * -=-=-=- SIDEBAR -=-=-=-
+ */
+
+.exchange-events.sidebar {
+}
+
+.exchange-events.sidebar > .event > h3 {
+	font-size: 1.1em;
+	line-height: 1.2em;
+	margin-bottom: 5px;
+}
+
+.exchange-events.sidebar > .event > .contents {
+	color: rgb(102, 102, 102);
+	font-size: 0.9em;
+	line-height: 1.2em;
+}
+
+
+
+/*
+ * -=-=-=- ARCHIVE -=-=-=-
+ */
+
+.exchange-events.archive {
+}
+
+.exchange-events.archive > .agenda-day {
+	padding:5px 0px;
+	margin-bottom:20px;
+	position:relative;
+	min-height:120px;
+}
+
+.exchange-events.archive > .agenda-day .date-label {
+	background-color:#eedeb9;
+	background-image:url('./calendar-bg.png');
+	background-position:center;
+	border:solid 1px #ccb55c;
+	border-radius:5px;
+	text-align:center;
+	width:90px;
+	height:80px;
+	padding:20px 15px;
+	position:absolute;
+	left:0px;
+	top:5px;
+	color:black;
+}
+
+.exchange-events.archive > .agenda-day .weekday {
+	font-size:12px;
+	line-height:12px;
+}
+
+.exchange-events.archive > .agenda-day .month {
+	font-size:16px;
+	line-height:26px;
+}
+
+.exchange-events.archive > .agenda-day .day {
+	font-size:50px;
+	line-height:50px;
+}
+
+.exchange-events.archive .event {
+	margin-left:135px;
+	margin-bottom:10px;
+	padding:0px;
+	border-bottom:solid 1px #ddd;
+}
+
+.exchange-events.archive .event .contents {
+}
+
+.exchange-events.archive .event > h3 {
+	display:block;
+	padding:5px 10px;
+	padding-top:7px;
+	border-bottom:solid 1px #ddd;
+	background-color:#f6f6f6;
+	margin:0px;
+	margin-bottom:8px;
+}
+
+.exchange-events.archive .event .event-info {
+	float: right;
+	text-align: left;
+	padding: 5px 10px;
+	margin-left: 15px;
+	margin-bottom: 8px;
+	border-left: solid 1px #ddd;
+	width: 140px;
+}
+
+.exchange-events.archive .event .excerpt {
+	color:#666;
+	margin-bottom:8px;
+	padding: 5px 10px;
+}
+
+.single-page.events .event .event-info {
+	float:right;
+}
+
+.single-page.events .event .event-info > .datetime {
+	border-top:solid 1px #ccc;
+}
+
+.single-page.events .event .event-info > div {
+	border-bottom:solid 1px #ccc;
+	padding-right:10px;
+}
+
+.single-page.events .event .event-info > div > label {
+	display:inline-block;
+	width:100px;
+	padding:7px;
+	text-align:right;
+	font-weight:bold;
+	margin-right:6px;
+	background-color:#efefef;
+}
+
+/*
+ * ---- CLEARFIX ----
+ */
+
+	.clearfix:before,
+	.clearfix:after {
+		content:"";
+		display:table;
+	}
+	
+	.clearfix:before,
+	.clearfix:after {
+		clear:both;
+	}
+	
+	/* For IE 6/7 (trigger hasLayout) */
+	.clearfix {
+		zoom:1;
+	}
